@@ -29,7 +29,7 @@ body {
 
 .bg-top-size {
   width: 375px;
-  height: 548px;
+  height: 568px;
 }
 
 .bg-bottom-size {
@@ -41,7 +41,7 @@ body {
   .bg-top-size {
     width: 200px;
     height: 400px;
-    right: -5rem;
+    right: 0;
   }
   
   .bg-bottom-size {
