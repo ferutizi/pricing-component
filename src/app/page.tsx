@@ -16,7 +16,9 @@ export default function Home() {
 					className='flex items-center text-darkGrayishBlue gap-4 my-8 font-bold'
 				>
 					<p className='text-lightGrayishBlue text-xs'>Annually</p>
-					<div onClick={() => setAnnually(!annually)} className={`w-11 h-7 ${linearGradient} rounded-2xl relative cursor-pointer hover:opacity-60`}>
+					<div
+						onClick={() => setAnnually(!annually)}
+						className={`w-11 h-7 ${linearGradient} rounded-2xl relative cursor-pointer hover:opacity-60`}>
 						<div className={`bg-white h-5 w-5 absolute ${annually ? 'right-5' : 'right-1'} rounded-full`} style={{top: '3px'}}></div>
 					</div>
 					<p className='text-lightGrayishBlue text-xs'>Monthly</p>

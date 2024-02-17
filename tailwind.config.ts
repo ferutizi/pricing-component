@@ -21,10 +21,6 @@ const config: Config = {
 				'grayishBlue': 'hsl(233, 13%, 49%)',
 				'darkGrayishBlue': 'hsl(232, 13%, 33%)'
 			},
-			fontSize: {
-				/* 				'sm': '15px',
-				'xs': '12px' */
-			},
 			padding: {
 				'1': '8px',
 				'2': '12px'
@@ -33,9 +29,12 @@ const config: Config = {
 				'80': '18rem'
 			},
 			height: {
-				'secondary': '24rem',
-				'primary': '26rem',
+				'secondary': '22rem',
+				'primary': '24rem',
 				'7': '26px'
+			},
+			boxShadow: {
+				'custom': '0px 8px 22px rgba(0, 0, 0, 0.075)'
 			}
 		},
 	},
