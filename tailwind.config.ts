@@ -14,18 +14,28 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			colors: {
-				'linearGradient': 'hsl(236, 72%, 79%) to hsl(237, 63%, 64%)',
+				'lightBlueGradient': 'hsl(236, 72%, 79%)',
+				'blueGradient': 'hsl(237, 63%, 64%)',
 				'veryLightGrayishBlue': 'hsl(240, 78%, 98%)',
 				'lightGrayishBlue': 'hsl(234, 14%, 74%)',
 				'grayishBlue': 'hsl(233, 13%, 49%)',
 				'darkGrayishBlue': 'hsl(232, 13%, 33%)'
 			},
 			fontSize: {
-				'sm': '15px',
-				'xs': '12px'
+				/* 				'sm': '15px',
+				'xs': '12px' */
 			},
 			padding: {
+				'1': '8px',
 				'2': '12px'
+			},
+			width: {
+				'80': '18rem'
+			},
+			height: {
+				'secondary': '24rem',
+				'primary': '26rem',
+				'7': '26px'
 			}
 		},
 	},

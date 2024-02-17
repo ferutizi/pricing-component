@@ -4,17 +4,23 @@ import { useState } from 'react'
 import Card from './components/Card'
 
 export default function Home() {
-	const [anually, setAnually] = useState<boolean>(true)
+	const [annually, setAnnually] = useState<boolean>(true)
+
+	const linearGradient = 'bg-gradient-to-br from-lightBlueGradient to-blueGradient'
+
 	return (
-		<main className="flex min-h-screen flex-col items-center justify-between p-24">
-			<h1 className='text-grayishBlue text-2xl p-4 font-bold'>Our Pricing</h1>
-			<div
-				className='flex items-center text-darkGrayishBlue gap-4 pb-8 font-bold'
-				onClick={() => setAnually(!anually)}
-			>
-				<p className='text-lightGrayishBlue text-xs'>Annually</p>
-				<div>B</div>
-				<p className='text-lightGrayishBlue text-xs'>Monthly</p>
+		<main className="flex h-screen flex-col items-center justify-center pt-12 pb-16">
+			<div className='flex flex-col items-center text-center pb-2'>
+				<h1 className='text-grayishBlue text-3xl font-bold'>Our Pricing</h1>
+				<div
+					className='flex items-center text-darkGrayishBlue gap-4 my-8 font-bold'
+				>
+					<p className='text-lightGrayishBlue text-xs'>Annually</p>
+					<div onClick={() => setAnnually(!annually)} className={`w-11 h-7 ${linearGradient} rounded-2xl relative cursor-pointer hover:opacity-60`}>
+						<div className={`bg-white h-5 w-5 absolute ${annually ? 'right-5' : 'right-1'} rounded-full`} style={{top: '3px'}}></div>
+					</div>
+					<p className='text-lightGrayishBlue text-xs'>Monthly</p>
+				</div>
 			</div>
 			<section className='flex items-center'>
 				<Card
@@ -24,7 +30,7 @@ export default function Home() {
 					storage='500 GB'
 					users={2}
 					sendUp={3}
-					anually={anually} 
+					annually={annually} 
 				/>
 				<Card
 					plan='Professional'
@@ -33,7 +39,7 @@ export default function Home() {
 					storage='1 TB'
 					users={5}
 					sendUp={10}
-					anually={anually}
+					annually={annually}
 					highlight={true} 
 				/>
 				<Card
@@ -43,7 +49,7 @@ export default function Home() {
 					storage='2 TB'
 					users={10}
 					sendUp={20}
-					anually={anually} 
+					annually={annually} 
 				/>
 			</section>
 		</main>
@@ -52,6 +58,9 @@ export default function Home() {
 
 {/* <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+- Mobile: 375px
+- Desktop: 1440px
 
 <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
