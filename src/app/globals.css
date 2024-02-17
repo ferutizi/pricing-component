@@ -27,6 +27,24 @@ body {
   }
 }
 
-.aa {
-  background: linear-gradient()
+.bg-top-size {
+  width: 375px;
+  height: 548px;
+}
+
+.bg-bottom-size {
+  width: 353px;
+  height: 304px;
+}
+
+@media (max-width: 500px) {
+  .bg-top-size {
+    width: 200px;
+    height: 400px;
+    right: -5rem;
+  }
+  
+  .bg-bottom-size {
+    display: none;
+  }
 }

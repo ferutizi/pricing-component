@@ -10,9 +10,9 @@ export default function Home() {
 	const linearGradient = 'bg-gradient-to-br from-lightBlueGradient to-blueGradient'
 
 	return (
-		<main className="flex h-screen flex-col items-center justify-center pt-12 pb-16">
-			<BgTop style={{width: '375px', height: '658px'}} className='absolute right-0 -z-10'/>
-			<BgBottom style={{width: '353px', height: '304px'}} className='absolute bottom-0 left-0 -z-10' />
+		<main className="grid lg:flex h-screen flex-col items-center justify-center pt-12 pb-16">
+			<BgTop className='bg-top-size absolute right-0 top-0 -z-10'/>
+			<BgBottom className='bg-bottom-size absolute bottom-0 left-0 -z-10' />
 			<div className='flex flex-col items-center text-center pb-2'>
 				<h1 className='text-grayishBlue text-3xl font-bold'>Our Pricing</h1>
 				<div
@@ -27,7 +27,7 @@ export default function Home() {
 					<p className='text-lightGrayishBlue text-xs'>Monthly</p>
 				</div>
 			</div>
-			<section className='grid grid-cols-1 lg:grid-cols-3 items-center'>
+			<section className='grid grid-cols-1 gap-6 pb-12 lg:grid-cols-3 lg:gap-0 lg:pb-0  items-center'>
 				<Card
 					plan='Basic'
 					annualPrice={199.99}
