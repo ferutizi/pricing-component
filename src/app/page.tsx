@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Card from './components/Card'
+import { BgBottom, BgTop } from './images'
 
 export default function Home() {
 	const [annually, setAnnually] = useState<boolean>(true)
@@ -10,6 +11,8 @@ export default function Home() {
 
 	return (
 		<main className="flex h-screen flex-col items-center justify-center pt-12 pb-16">
+			<BgTop style={{width: '375px', height: '658px'}} className='absolute right-0 -z-10'/>
+			<BgBottom style={{width: '353px', height: '304px'}} className='absolute bottom-0 left-0 -z-10' />
 			<div className='flex flex-col items-center text-center pb-2'>
 				<h1 className='text-grayishBlue text-3xl font-bold'>Our Pricing</h1>
 				<div
@@ -24,7 +27,7 @@ export default function Home() {
 					<p className='text-lightGrayishBlue text-xs'>Monthly</p>
 				</div>
 			</div>
-			<section className='flex items-center'>
+			<section className='grid grid-cols-1 lg:grid-cols-3 items-center'>
 				<Card
 					plan='Basic'
 					annualPrice={199.99}
